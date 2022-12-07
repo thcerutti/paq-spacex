@@ -18,7 +18,7 @@
       listaDeLancamentos.forEach((lancamento) => {
         // para cada item da lista de lançamentos
         // organiza as informações para facilitar a vida (opcional)
-        let lancamento = {
+        let info = {
           nomeDoFoguete: lancamento.name,
           dataDeLancamento: lancamento.date_utc,
           detalhes: lancamento.details,
@@ -29,9 +29,9 @@
         };
 
         // formata o texto que vai aparecer na tela
-        let InformacoesDoLancamento = `Nome do foguete: ${lancamento.nomeDoFoguete}; Data de lançamento: ${lancamento.dataDeLancamento}`;
+        let informacoesDoLancamento = `Nome do foguete: ${info.nomeDoFoguete}; Data de lançamento: ${info.dataDeLancamento}`;
         // com este texto formado, cria um elemento de texto para inserir na tela
-        let textnode = document.createTextNode(InformacoesDoLancamento);
+        let textnode = document.createTextNode(informacoesDoLancamento);
         // adiciona este elemento ao corpo da página
         document.body.appendChild(textnode);
         // coloca uma linha divisória para imprimir o próximo elemento
