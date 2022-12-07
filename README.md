@@ -30,5 +30,8 @@ Para a navegação usaremos uma estrutura com 3 páginas:
 ## Sugestão de como ficariam as páginas
 
 ![estruturas de páginas do projeto](./doc/doc-paq-spacex.png)
+
+## Ideia de visual para as páginas
+
 ![Páginia inicial](./doc/index.png)
 ![Listagem de dados](./doc/dados.png)
