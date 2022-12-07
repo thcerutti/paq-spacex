@@ -16,6 +16,7 @@ Para a navegação usaremos uma estrutura com 3 páginas:
 ## Material de apoio
 
 - [Como consumir uma API em Javascript (Youtube)](https://www.youtube.com/watch?v=IDG6EOXYAq8)
+- [O que é JSON](https://www.hostinger.com.br/tutoriais/o-que-e-json)
 
 ## Sugestão de estrutura de código
 
