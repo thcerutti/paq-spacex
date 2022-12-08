@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(29deg, rgb(26, 48, 54), rgba(255, 255, 255, 0.877));
+         
+    
+    font: normal 15pt Arial;
+}
+
+#navbar-cima{
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    height: 80px;
+    width: auto;
+   
+    
+    
+}
+
+#logo-pequena{
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+}
+
+header{
+  color: rgba(255, 245, 245, 0.863);
+  text-align: center;
+}
+
+.botao-navbar{
+    color: white;
+    text-decoration: none;
+  
+}
+
+
+#imagem-spacex{
+   align-items: center;
+    width: 700px;
+    height: 150px;
+    margin-left:120px;
+}
+
+
+section{
+    background: rgb(255, 246, 246);   
+    padding: 15px;
+    width: 1;
+    margin: 50px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.671);
+    text-align: center;
+}
+
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
