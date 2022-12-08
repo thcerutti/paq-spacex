@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exemplo de busca de dados da API</h1>
+    <button onclick="buscarDadosDaApi()">Buscar dados da API</button>
+    <hr />
+  </body>
+
+  <script>
+    // função que formata e imprime os dados na tela
+    function formatarDadosDaApi(listaDeLancamentos) {
+      // entra uma lista de lançamentos pelo parâmetro
+      listaDeLancamentos.forEach((lancamento) => {
+        // para cada item da lista de lançamentos
+        // organiza as informações para facilitar a vida (opcional)
+        let info = {
+          nomeDoFoguete: lancamento.name,
+          dataDeLancamento: lancamento.date_utc,
+          detalhes: lancamento.details,
+          lancamentoBemSucedido: lancamento.success,
+          linkYoutube: lancamento.links.webcast,
+          linkWikipedia: lancamento.links.wikipedia,
+          emblema: lancamento.links.patch.small,
+        };
+
+        // formata o texto que vai aparecer na tela
+        let informacoesDoLancamento = `Nome do foguete: ${info.nomeDoFoguete}; Data de lançamento: ${info.dataDeLancamento}`;
+        // com este texto formado, cria um elemento de texto para inserir na tela
+        let textnode = document.createTextNode(informacoesDoLancamento);
+        // adiciona este elemento ao corpo da página
+        document.body.appendChild(textnode);
+        // coloca uma linha divisória para imprimir o próximo elemento
+        document.body.appendChild(document.createElement("HR"));
+      });
+    }
+
+    function buscarDadosDaApi() {
+      let endereco = "https://api.spacexdata.com/v5/launches/past";
+      fetch(endereco) // busca dados do endereço da API (também conhecido por "endpoint")
+        .then(function (respostaDaApi) {
+          // then = "então / Busca os dados da api, então execute esta função"
+          return respostaDaApi.json(); // converte os dados da API para formato JSON e manda o resultado pra frente (próximo then/então)
+        })
+        .then(function (dadosEmFormatoJson) {
+          // com os dados convertidos para JSON, faça isso
+          formatarDadosDaApi(dadosEmFormatoJson); // chama a função que formata as informações para imprimir na tela
+        });
+    }
+  </script>
+</html>
