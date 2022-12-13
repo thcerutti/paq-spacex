@@ -1,0 +1,39 @@
+#botao1{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 12px;
+    width: 230px;
+    height:60px;  
+    background-color: rgb(26, 25, 25);
+    color: rgb(235, 225, 225);
+    font-family: bankgotic;
+    font-size: 23px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: transform 200ms ease-in-out; 
+
+}
+button:hover{
+    transform: scale(1.05);
+
+}
+
+#botaov{
+    color: rgb(3, 3, 3);
+    margin-top: 47px;
+    text-decoration: none;
+    float: right;
+    font-family: bankgotic;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 590;
+    background-color: rgba(240, 248, 255, 0);
+    border-color: rgba(0, 0, 0, 0);
+
+    
+
+
+
+}
