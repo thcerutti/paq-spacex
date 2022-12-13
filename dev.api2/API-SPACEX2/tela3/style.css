@@ -1,0 +1,23 @@
+body{
+    background-color: rgba(0, 0, 0, 0.212);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#navbar{
+    background-color: rgba(230, 230, 230, 0);
+    text-align: center;
+    color:rgb(29, 24, 24);
+    font-family: 'Bank Gothic', sans-serif;
+    font-size: 20px;
+    
+   
+}
+
+
+
+
+hr {
+    margin-top: 40px;
+}
